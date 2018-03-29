@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="上善若水">
+<meta name="description" content="基本信息 刘嘉豪 (Rick Liu) | 男 | 90后  坐标 广东珠海  联系方式 Email: 414149871@qq.com">
 <meta property="og:type" content="website">
-<meta property="og:title" content="about">
+<meta property="og:title" content="关于作者">
 <meta property="og:url" content="http://yoursite.com/about/index.html">
 <meta property="og:site_name" content="学习成长">
-<meta property="og:description" content="上善若水">
+<meta property="og:description" content="基本信息 刘嘉豪 (Rick Liu) | 男 | 90后  坐标 广东珠海  联系方式 Email: 414149871@qq.com">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-28T15:18:54.582Z">
+<meta property="og:updated_time" content="2018-03-29T08:19:37.607Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="about">
-<meta name="twitter:description" content="上善若水">
+<meta name="twitter:title" content="关于作者">
+<meta name="twitter:description" content="基本信息 刘嘉豪 (Rick Liu) | 男 | 90后  坐标 广东珠海  联系方式 Email: 414149871@qq.com">
 
 
 
@@ -108,9 +108,9 @@
       author: '博主'
     },
     algolia: {
-      applicationID: '',
+      applicationID: 'DIWS0JT02A',
       apiKey: '',
-      indexName: '',
+      indexName: 'dev_NAME',
       hits: {"per_page":10},
       labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
     }
@@ -125,7 +125,7 @@
 
 
 
-  <title>about | 学习成长</title>
+  <title>关于作者 | 学习成长</title>
   
 
 
@@ -241,9 +241,47 @@
       
 
       
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
     </ul>
   
 
+  
+    <div class="site-search">
+      
+  
+  <div class="algolia-popup popup search-popup">
+    <div class="algolia-search">
+      <div class="algolia-search-input-icon">
+        <i class="fa fa-search"></i>
+      </div>
+      <div class="algolia-search-input" id="algolia-search-input"></div>
+    </div>
+
+    <div class="algolia-results">
+      <div id="algolia-stats"></div>
+      <div id="algolia-hits"></div>
+      <div id="algolia-pagination" class="algolia-pagination"></div>
+    </div>
+
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+  </div>
+
+
+
+
+    </div>
   
 </nav>
 
@@ -265,7 +303,7 @@
     <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">about</h1>
+	<h1 class="post-title" itemprop="name headline">关于作者</h1>
 
 
 
@@ -277,7 +315,16 @@
       <div class="post-body">
         
         
-          
+          <h2 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h2><ul>
+<li>刘嘉豪 (Rick Liu) | 男 | 90后</li>
+</ul>
+<h2 id="坐标"><a href="#坐标" class="headerlink" title="坐标"></a>坐标</h2><ul>
+<li>广东珠海</li>
+</ul>
+<h2 id="联系方式"><a href="#联系方式" class="headerlink" title="联系方式"></a>联系方式</h2><ul>
+<li>Email: <a href="mailto:414149871@qq.com" target="_blank" rel="noopener">414149871@qq.com</a></li>
+</ul>
+
         
       </div>
       
@@ -319,8 +366,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -408,6 +464,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#基本信息"><span class="nav-number">1.</span> <span class="nav-text">基本信息</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#坐标"><span class="nav-number">2.</span> <span class="nav-text">坐标</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#联系方式"><span class="nav-number">3.</span> <span class="nav-text">联系方式</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -609,6 +681,19 @@
   
 
 
+
+
+  
+  
+  
+  <link rel="stylesheet" href="/lib/algolia-instant-search/instantsearch.min.css">
+
+  
+  
+  <script src="/lib/algolia-instant-search/instantsearch.min.js"></script>
+  
+
+  <script src="/js/src/algolia-search.js?v=5.1.4"></script>
 
 
 
