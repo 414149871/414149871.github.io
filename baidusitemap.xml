@@ -4,6 +4,26 @@
 
     
   <url>
+    <loc>http://yoursite.com/2018/03/31/iOS/iOS-CollectionView%20%E5%9F%BA%E7%A1%80/iOS-CollectionView%20%E5%9F%BA%E7%A1%80/</loc>
+    <lastmod>2018-03-31T06:38:04.104Z</lastmod>
+    <data>
+        <display>
+        <title>iOS-CollectionView 基础</title>
+        <pubTime>2018-03-31T08:03:14.000Z</pubTime>
+        
+        <tag>iOS-CollectionView</tag>
+         
+         
+           
+             
+              <breadCrumb title="iOS" url="http://yoursite.com/categories/iOS/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yoursite.com/2018/03/30/BlockChain/BlockChain-Test/</loc>
     <lastmod>2018-03-31T06:31:30.392Z</lastmod>
     <data>
@@ -17,26 +37,6 @@
            
              
               <breadCrumb title="BlockChain" url="http://yoursite.com/categories/BlockChain/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2018/03/31/iOS/iOS-CollectionView%20%E5%9F%BA%E7%A1%80/iOS-CollectionView%20%E5%9F%BA%E7%A1%80/</loc>
-    <lastmod>2018-03-31T06:31:26.274Z</lastmod>
-    <data>
-        <display>
-        <title>iOS-CollectionView 基础</title>
-        <pubTime>2018-03-31T08:03:14.000Z</pubTime>
-        
-        <tag>iOS-CollectionView</tag>
-         
-         
-           
-             
-              <breadCrumb title="iOS" url="http://yoursite.com/categories/iOS/"/>
           
         </display>
     </data>
