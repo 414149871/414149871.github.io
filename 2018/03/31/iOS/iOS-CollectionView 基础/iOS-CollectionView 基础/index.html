@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="iOS," />
+  <meta name="keywords" content="iOS-CollectionView," />
 
 
 
@@ -79,18 +79,20 @@
 
 
 
-<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.">
-<meta name="keywords" content="iOS">
+<meta name="description" content="CollectionView基础使用方法">
+<meta name="keywords" content="iOS-CollectionView">
 <meta property="og:type" content="article">
-<meta property="og:title" content="iOS Hello World">
-<meta property="og:url" content="http://yoursite.com/2018/03/28/iOS/hello-world/index.html">
+<meta property="og:title" content="iOS-CollectionView 基础">
+<meta property="og:url" content="http://yoursite.com/2018/03/31/iOS/iOS-CollectionView 基础/iOS-CollectionView 基础/index.html">
 <meta property="og:site_name" content="学习成长">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.">
+<meta property="og:description" content="CollectionView基础使用方法">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-30T09:39:27.897Z">
+<meta property="og:image" content="http://res.cloudinary.com/dan3hqehd/image/upload/v1522475088/iOS/collectionView%E5%9F%BA%E7%A1%80.png">
+<meta property="og:updated_time" content="2018-03-31T06:25:35.214Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="iOS Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.">
+<meta name="twitter:title" content="iOS-CollectionView 基础">
+<meta name="twitter:description" content="CollectionView基础使用方法">
+<meta name="twitter:image" content="http://res.cloudinary.com/dan3hqehd/image/upload/v1522475088/iOS/collectionView%E5%9F%BA%E7%A1%80.png">
 
 
 
@@ -120,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/03/28/iOS/hello-world/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/03/31/iOS/iOS-CollectionView 基础/iOS-CollectionView 基础/"/>
 
 
 
 
 
-  <title>iOS Hello World | 学习成长</title>
+  <title>iOS-CollectionView 基础 | 学习成长</title>
   
 
 
@@ -222,7 +224,7 @@
       
         
         <li class="menu-item menu-item-tool">
-          <a href="/categories/tools/" rel="section">
+          <a href="/categories/Tools/" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-cog"></i> <br />
             
@@ -357,7 +359,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/28/iOS/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/31/iOS/iOS-CollectionView 基础/iOS-CollectionView 基础/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="刘嘉豪 / Rick Liu">
@@ -374,7 +376,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">iOS Hello World</h1>
+          <h1 class="post-title" itemprop="name headline">iOS-CollectionView 基础</h1>
         
 
         <div class="post-meta">
@@ -386,8 +388,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-28T17:04:36+08:00">
-                2018-03-28
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-31T16:03:14+08:00">
+                2018-03-31
               </time>
             
 
@@ -427,9 +429,9 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/03/28/iOS/hello-world/#comments" itemprop="discussionUrl">
+                <a href="/2018/03/31/iOS/iOS-CollectionView 基础/iOS-CollectionView 基础/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2018/03/28/iOS/hello-world/" itemprop="commentCount"></span>
+                        data-disqus-identifier="2018/03/31/iOS/iOS-CollectionView 基础/iOS-CollectionView 基础/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -456,7 +458,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  78
+                  398
                 </span>
               
 
@@ -472,12 +474,16 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1
+                  2
                 </span>
               
             </div>
           
 
+          
+              <div class="post-description">
+                  CollectionView基础使用方法
+              </div>
           
 
         </div>
@@ -493,16 +499,18 @@
       
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+        <blockquote class="blockquote-center">blah blah blah</blockquote>
+
 <a id="more"></a>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+<p>CollectionView基础使用方法</p>
+<p>我们将完成以下效果<br><img src="http://res.cloudinary.com/dan3hqehd/image/upload/v1522475088/iOS/collectionView%E5%9F%BA%E7%A1%80.png" alt=""></p>
+<p>主要步骤如下:</p>
+<p>在延展中把 collectionView 作为属性</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">@interface ViewController ()&lt;UICollectionViewDelegate,UICollectionViewDataSource&gt;</span><br><span class="line"></span><br><span class="line">@property (nonatomic,strong) UICollectionView *collectionView;</span><br><span class="line"></span><br><span class="line">@end</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">//创建 layout(此处创建的是流水布局)</span><br><span class="line"></span><br><span class="line">UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];</span><br><span class="line"></span><br><span class="line">//行距</span><br><span class="line"></span><br><span class="line">flowLayout.minimumLineSpacing = 10;</span><br><span class="line"></span><br><span class="line">//列距</span><br><span class="line"></span><br><span class="line">flowLayout.minimumInteritemSpacing = 10;</span><br><span class="line"></span><br><span class="line">//设置每个 item 的大小</span><br><span class="line"></span><br><span class="line">flowLayout.itemSize = CGSizeMake(([UIScreen mainScreen].bounds.size.width -40)/3, ([UIScreen mainScreen].bounds.size.height-80)/4);</span><br><span class="line"></span><br><span class="line">//设置 item 的上左下右的边距大小</span><br><span class="line"></span><br><span class="line">flowLayout.sectionInset = UIEdgeInsetsMake(10, 10, 20, 10);</span><br><span class="line"></span><br><span class="line">//设置 UICollectionView 的滑动方向</span><br><span class="line"></span><br><span class="line">flowLayout.scrollDirection = UICollectionViewScrollDirectionVertical;</span><br></pre></td></tr></table></figure>
+<p>注册 item<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">   //注册 item</span><br><span class="line">[self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:CellIdentifier];</span><br><span class="line">   </span><br><span class="line">   //注册头部区域</span><br><span class="line">   [self.collectionView registerClass:[UICollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:Header];</span><br><span class="line">   </span><br><span class="line">   //注册尾部区域</span><br><span class="line">   [self.collectionView registerClass:[UICollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:Footer];</span><br></pre></td></tr></table></figure></p>
+<p>实现UICollectionViewDataSource 协议中必须实现的方法<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section&#123;</span><br><span class="line">    return 20;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// The cell that is returned must be retrieved from a call to -dequeueReusableCellWithReuseIdentifier:forIndexPath:</span><br><span class="line">- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath&#123;</span><br><span class="line">    </span><br><span class="line">   UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:CellIdentifier forIndexPath:indexPath];</span><br><span class="line"></span><br><span class="line">    cell.contentView.backgroundColor = [UIColor redColor];</span><br><span class="line">    return cell;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>实现UICollectionViewDelegate 协议中的一些方法<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">//该方法用于设置 collectionView 的 header 和 footer</span><br><span class="line">- (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath&#123;</span><br><span class="line">    </span><br><span class="line">    //设置头部或尾部 view</span><br><span class="line">    if (kind == UICollectionElementKindSectionHeader) &#123;</span><br><span class="line">        </span><br><span class="line">        UICollectionReusableView *headerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:Header forIndexPath:indexPath];</span><br><span class="line">        headerView.backgroundColor = [UIColor orangeColor];</span><br><span class="line">        return headerView;</span><br><span class="line">    &#125;</span><br><span class="line">    else&#123;</span><br><span class="line">        </span><br><span class="line">        UICollectionReusableView *footerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:Footer forIndexPath:indexPath];</span><br><span class="line">        footerView.backgroundColor = [UIColor yellowColor];</span><br><span class="line">        return footerView;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//点击 cell 时调用响应的方法</span><br><span class="line">- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath&#123;</span><br><span class="line">    </span><br><span class="line">    NSLog(@&quot;didselected = %lu&quot;,indexPath.row);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -562,7 +570,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/iOS/" rel="tag"># iOS</a>
+            <a href="/tags/iOS-CollectionView/" rel="tag"># iOS-CollectionView</a>
           
         </div>
       
@@ -575,15 +583,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2018/03/31/iOS/iOS-CollectionView流水布局/iOS-CollectionView流水布局/" rel="next" title="iOS-CollectionView流水布局">
+                <i class="fa fa-chevron-left"></i> iOS-CollectionView流水布局
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/03/30/Tool/tools-PersonalBlogBuilding/" rel="prev" title="个人博客搭建">
-                个人博客搭建 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -645,17 +653,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -674,7 +673,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -685,7 +684,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -696,7 +695,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -774,22 +773,6 @@
       </section>
 
       
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
-      
 
       
 
@@ -817,7 +800,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">129</span>
+    <span title="Site words total count">449</span>
   
 </div>
 
@@ -975,9 +958,9 @@
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'http://yoursite.com/2018/03/28/iOS/hello-world/';
-          this.page.identifier = '2018/03/28/iOS/hello-world/';
-          this.page.title = 'iOS Hello World';
+          this.page.url = 'http://yoursite.com/2018/03/31/iOS/iOS-CollectionView 基础/iOS-CollectionView 基础/';
+          this.page.identifier = '2018/03/31/iOS/iOS-CollectionView 基础/iOS-CollectionView 基础/';
+          this.page.title = 'iOS-CollectionView 基础';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://liujiahao-one.disqus.com/embed.js';

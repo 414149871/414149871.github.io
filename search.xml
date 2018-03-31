@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[iOS-CollectionView 基础]]></title>
+    <url>%2F2018%2F03%2F31%2FiOS%2FiOS-CollectionView%20%E5%9F%BA%E7%A1%80%2FiOS-CollectionView%20%E5%9F%BA%E7%A1%80%2F</url>
+    <content type="text"><![CDATA[blah blah blah CollectionView基础使用方法 我们将完成以下效果 主要步骤如下: 在延展中把 collectionView 作为属性 12345@interface ViewController ()&lt;UICollectionViewDelegate,UICollectionViewDataSource&gt;@property (nonatomic,strong) UICollectionView *collectionView;@end 123456789101112131415161718192021222324//创建 layout(此处创建的是流水布局)UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];//行距flowLayout.minimumLineSpacing = 10;//列距flowLayout.minimumInteritemSpacing = 10;//设置每个 item 的大小flowLayout.itemSize = CGSizeMake(([UIScreen mainScreen].bounds.size.width -40)/3, ([UIScreen mainScreen].bounds.size.height-80)/4);//设置 item 的上左下右的边距大小flowLayout.sectionInset = UIEdgeInsetsMake(10, 10, 20, 10);//设置 UICollectionView 的滑动方向flowLayout.scrollDirection = UICollectionViewScrollDirectionVertical; 注册 item12345678 //注册 item[self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:CellIdentifier]; //注册头部区域 [self.collectionView registerClass:[UICollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:Header]; //注册尾部区域 [self.collectionView registerClass:[UICollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:Footer]; 实现UICollectionViewDataSource 协议中必须实现的方法123456789101112- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section&#123; return 20;&#125;// The cell that is returned must be retrieved from a call to -dequeueReusableCellWithReuseIdentifier:forIndexPath:- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath&#123; UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:CellIdentifier forIndexPath:indexPath]; cell.contentView.backgroundColor = [UIColor redColor]; return cell;&#125; 实现UICollectionViewDelegate 协议中的一些方法1234567891011121314151617181920212223//该方法用于设置 collectionView 的 header 和 footer- (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath&#123; //设置头部或尾部 view if (kind == UICollectionElementKindSectionHeader) &#123; UICollectionReusableView *headerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:Header forIndexPath:indexPath]; headerView.backgroundColor = [UIColor orangeColor]; return headerView; &#125; else&#123; UICollectionReusableView *footerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:Footer forIndexPath:indexPath]; footerView.backgroundColor = [UIColor yellowColor]; return footerView; &#125;&#125;//点击 cell 时调用响应的方法- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath&#123; NSLog(@&quot;didselected = %lu&quot;,indexPath.row);&#125;]]></content>
+      <categories>
+        <category>iOS</category>
+      </categories>
+      <tags>
+        <tag>iOS-CollectionView</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[iOS-CollectionView流水布局]]></title>
+    <url>%2F2018%2F03%2F31%2FiOS%2FiOS-CollectionView%E6%B5%81%E6%B0%B4%E5%B8%83%E5%B1%80%2FiOS-CollectionView%E6%B5%81%E6%B0%B4%E5%B8%83%E5%B1%80%2F</url>
+    <content type="text"><![CDATA[]]></content>
+      <categories>
+        <category>iOS</category>
+      </categories>
+      <tags>
+        <tag>iOS-CollectionView</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[BlockChain_Test]]></title>
     <url>%2F2018%2F03%2F30%2FBlockChain%2FBlockChain-Test%2F</url>
     <content type="text"><![CDATA[Welcome to BlockChain Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
@@ -16,21 +38,10 @@
     <url>%2F2018%2F03%2F30%2FTool%2Ftools-PersonalBlogBuilding%2F</url>
     <content type="text"><![CDATA[个人博客搭建]]></content>
       <categories>
-        <category>tools</category>
+        <category>Tools</category>
       </categories>
       <tags>
         <tag>tools</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[iOS Hello World]]></title>
-    <url>%2F2018%2F03%2F28%2FiOS%2Fhello-world%2F</url>
-    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
-      <categories>
-        <category>iOS</category>
-      </categories>
-      <tags>
-        <tag>iOS</tag>
       </tags>
   </entry>
 </search>
